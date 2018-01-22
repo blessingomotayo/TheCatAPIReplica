@@ -1,23 +1,8 @@
-var app = angular.module('myApp', []);
+import angular from 'angular';
+import uirouter from '@uirouter/angularjs';
+import catapi from './catapimainpage/catapi.module';
 
-app.controller('myCtrl', function($scope) {
-    $scope.firstName = "Blessing";
-    $scope.lastName = "Omotayo";
-    $scope.loveit = "Love it";
-    $scope.hateit = "Hate it";
-    $scope.red = {
-        "background-color": "#cc0000",
-        "text-shadow": "0.2px 0.2px",
-        "border": "1px solid #b30000"
-    }
-    $scope.green = {
-        "background-color": "#4eb151",
-        "text-shadow": "0.2px 0.2px",
-        "border": "1px solid #46a049"
-    }
-    $scope.orange = {
-        "background-color": "#dd4814",
-        "text-shadow": "0.2px 0.2px",
-        "border": "1px solid #cc3300"
-    }
-});
+angular.module('catapi', [
+  uirouter,
+  'catapi'
+]);

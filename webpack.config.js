@@ -1,7 +1,14 @@
 const config = {
   entry: './index.js',
-  debug: true,
-  vendor: ['angular','angular-ui-router'],
+  module: {
+    rules: [
+        { test: /\.(html)$/, use: ['html-loader'] }
+    ]
+  },
+  output: {
+    path: __dirname,
+    filename: "bundle.js"
+}
 };
 
 module.exports = config;
