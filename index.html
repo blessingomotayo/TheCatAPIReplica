@@ -1,90 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="bundle.js"></script>
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body ng-app="myApp" ng-controller = "myCtrl"> 
-	
-<div class="navbar">
-  <a href="#news">The Cat API</a>
-  <a href="#contact">Documentation</a>
-</div>
-
-<div class = "mainView">
-	<div class = "mainViewContent">
-		<h1>Where everyday is Caturday.</h1>
-		<p>
-			<strong>See another?</strong>
-			<button type = "button" ng-style = "green">{{loveit}}</button>
-			<button type = "button" ng-style = "red">{{hateit}}</button>
-		</p>
-		<p>
-			<a href="http://thecatapi.com"><img src="http://thecatapi.com/api/images/get?format=src&type=gif"></a>
-		</p>
-		<p>Link to this kitty:</p>
-		<pre>
-			<a href = "http://thecatapi.com/?id=9fj">http://thecatapi.com/?id=9fj</a>
-		</pre>
-		<div>
-			<a class = "source" href = "" >[Source]</a>
-		</div>
-		<p></p>
-		<p>
-			Jazz up your App with all the Kittys it can handle
-			<br>
-			<button type = "button" ng-style = "orange">View Documentation</button>
-		</p>
-	</div>
-</div>
-<div class = "bottomView">
-	<hr>
-	<h4>This will place a random animated cat in your html page. <small>Nice for snazy forum signatures etc</small></h4>
-	<pre class = "mainViewWidth">
-		< a href="http://thecatapi.com">< img src="http://thecatapi.com/api/images/get?format=src&type=gif">< /a>
-	</pre>
-	<br>
-	<footer>
-		<h4>
-			Updated daily with hundreds of new Kittys
-		</h4>
-		<p></p>
-		<p class = "min">
-			Want to use it in an app? Well check out the <a href="www.google.ca">Documentation</a> and go wild.
-		</p>
-		<p class = "min">
-			Created by <a href="https://github.com/blessingomotayo">{{firstName}} {{lastName}}</a> as a coding practice. 
-			<br>
-			Look replicated from <a href="http://thecatapi.com/">The Cat API</a>
-		</p>
-	</footer>
-</div>
-
-<script type="text/javascript">
-	var app = angular.module('myApp', []);
-
-	app.controller('myCtrl', function($scope) {
-		$scope.firstName = "Blessing";
-		$scope.lastName = "Omotayo";
-		$scope.loveit = "Love it";
-		$scope.hateit = "Hate it";
-		$scope.red = {
-			"background-color": "#cc0000",
-			"text-shadow": "0.2px 0.2px",
-			"border": "1px solid #b30000"
-		}
-		$scope.green = {
-			"background-color": "#4eb151",
-			"text-shadow": "0.2px 0.2px",
-			"border": "1px solid #46a049"
-		}
-		$scope.orange = {
-			"background-color": "#dd4814",
-			"text-shadow": "0.2px 0.2px",
-			"border": "1px solid #cc3300"
-		}
-	});
-</script>
-
+<body ng-app="myApp" >
+	<catapi></catapi>
 </body>
 </html>
