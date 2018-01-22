@@ -1,0 +1,24 @@
+{
+  "name": "thecatapireplica",
+  "version": "1.0.0",
+  "description": "The Cat API website replica as a request from an interview.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blessingomotayo/TheCatAPIReplica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blessingomotayo/TheCatAPIReplica/issues"
+  },
+  "homepage": "https://github.com/blessingomotayo/TheCatAPIReplica#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
